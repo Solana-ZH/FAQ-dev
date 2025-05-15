@@ -131,11 +131,30 @@ Coral-xyz 是 Backpack 背后的团队，主导了 Anchor、Backpack、xNFT 等�
 
 原因是 `proc-macro2 1.0.95` 改动。
 
-解决方案：
+Option 1:
+Step 1:
+cargo install --git https://github.com/coral-xyz/anchor --tag v0.31.1 anchor-cli --force
+Step 2:
+add to Cargo.toml
+[dependencies]
+anchor-lang = "0.31.1"
+anchor-spl = "0.31.1"
+add to Anchor.toml
+[toolchain]
+anchor_version = "0.31.1"
+Step 3:
+cargo clean
+anchor clean
+anchor build
 
-- 推荐升级 Anchor 到 0.31.1
-- 或将 `proc-macro2` 降级到 `1.0.94`
-- 或使用社区 fork：https://github.com/daog1/anchor/commits/solana17/
+Option 2:
+cargo update proc-macro2 --precise 1.0.94
+
+Option 3:
+rustup update
+cargo update
+anchor build
+
 
 ---
 
