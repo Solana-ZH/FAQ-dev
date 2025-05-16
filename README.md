@@ -199,3 +199,25 @@ anchor build
 
 ```bash
 anchor idl init <PROGRAM_ID> ./target/idl/your_program.json
+
+```
+---
+
+## 25. 目前 solana 上开源的合约开发框架有哪些？
+
+具体的使用参考项目链接
+
+- [anchor](https://github.com/solana-foundation/anchor)
+- [pinocchio](https://github.com/anza-xyz/pinocchio)
+- [steel](https://github.com/regolith-labs/steel)
+- [typhoon](https://github.com/exotic-markets-labs/typhoon)
+
+---
+
+## 26. IDL 标准
+
+目前IDL有两种标准
+- [anchor](https://github.com/solana-foundation/anchor)
+- [shank](https://github.com/metaplex-foundation/shank) 上面列举的几个框架(除anchor)部分支持shank
+
+---
