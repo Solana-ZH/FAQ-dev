@@ -48,6 +48,7 @@ Coral-xyz 是 Backpack 背后的团队，主导了 Anchor、Backpack、xNFT 等�
 
 - Codama（支持大部分 Anchor 合约）
 - [solana-anchor-go](https://github.com/daog1/solana-anchor-go)（Go语言解析 IDL）
+- [anchor-gen](https://github.com/saber-hq/anchor-gen) (Rust)
 
 ---
 
